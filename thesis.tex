@@ -1,0 +1,42 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass{harvard-thesis}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%% custom stuff
+\newcommand{\name}{TravelNet } % name of startup. pls change later on
+
+%%%%%%%%%%%%%%%%%%%%%% 
+
+% the front matter
+\input{frontmatter/coverpage}
+\maketitle
+\abstractpage
+\tableofcontents
+%\authorlist
+\listoffigures
+\dedicationpage
+
+\onehalfspacing
+
+% incluude each chapter...
+\include{chapters/1-TravelNet}
+\include{chapters/2-Competition}
+\include{chapters/3-Validation}
+\include{chapters/4-Marketing}
+\include{chapters/5-OperationalPlan}
+\include{chapters/6-Growth}
+\include{chapters/7-StartupTeam}
+\include{chapters/8-Financing}
+\include{chapters/9-Appendix}
+
+\singlespacing
+
+% the back matter
+\clearpage
+\bibliography{references}
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{plainnat}
+
+\end{document}
